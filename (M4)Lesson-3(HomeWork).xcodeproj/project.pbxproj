@@ -13,6 +13,10 @@
 		445E5D8829E1F959001F00A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445E5D8629E1F959001F00A8 /* Main.storyboard */; };
 		445E5D8A29E1F95A001F00A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445E5D8929E1F95A001F00A8 /* Assets.xcassets */; };
 		445E5D8D29E1F95A001F00A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445E5D8B29E1F95A001F00A8 /* LaunchScreen.storyboard */; };
+		445E5D9629E1F96B001F00A8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 445E5D9529E1F96B001F00A8 /* Kingfisher */; };
+		445E5D9929E1F976001F00A8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 445E5D9829E1F976001F00A8 /* SnapKit */; };
+		445E5D9E29E1FA19001F00A8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E5D9D29E1FA19001F00A8 /* ApiManager.swift */; };
+		44B82FA929E5961A00AB67C1 /* GetRequestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B82FA829E5961A00AB67C1 /* GetRequestPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		445E5D8929E1F95A001F00A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445E5D8C29E1F95A001F00A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445E5D8E29E1F95A001F00A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445E5D9D29E1FA19001F00A8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		44B82FA829E5961A00AB67C1 /* GetRequestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445E5D9629E1F96B001F00A8 /* Kingfisher in Frameworks */,
+				445E5D9929E1F976001F00A8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,41 @@
 		445E5D7F29E1F959001F00A8 /* (M4)Lesson-3(HomeWork) */ = {
 			isa = PBXGroup;
 			children = (
-				445E5D8029E1F959001F00A8 /* AppDelegate.swift */,
-				445E5D8229E1F959001F00A8 /* SceneDelegate.swift */,
-				445E5D8429E1F959001F00A8 /* ViewController.swift */,
+				445E5D9A29E1F99D001F00A8 /* Support Files */,
+				445E5D9B29E1F9B4001F00A8 /* ApiManager */,
+				445E5D9C29E1F9D1001F00A8 /* Views */,
 				445E5D8629E1F959001F00A8 /* Main.storyboard */,
 				445E5D8929E1F95A001F00A8 /* Assets.xcassets */,
 				445E5D8B29E1F95A001F00A8 /* LaunchScreen.storyboard */,
 				445E5D8E29E1F95A001F00A8 /* Info.plist */,
 			);
 			path = "(M4)Lesson-3(HomeWork)";
+			sourceTree = "<group>";
+		};
+		445E5D9A29E1F99D001F00A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				445E5D8229E1F959001F00A8 /* SceneDelegate.swift */,
+				445E5D8029E1F959001F00A8 /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		445E5D9B29E1F9B4001F00A8 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				445E5D9D29E1FA19001F00A8 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		445E5D9C29E1F9D1001F00A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				445E5D8429E1F959001F00A8 /* ViewController.swift */,
+				44B82FA829E5961A00AB67C1 /* GetRequestPage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,10 @@
 			dependencies = (
 			);
 			name = "(M4)Lesson-3(HomeWork)";
+			packageProductDependencies = (
+				445E5D9529E1F96B001F00A8 /* Kingfisher */,
+				445E5D9829E1F976001F00A8 /* SnapKit */,
+			);
 			productName = "(M4)Lesson-3(HomeWork)";
 			productReference = 445E5D7D29E1F959001F00A8 /* (M4)Lesson-3(HomeWork).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,10 @@
 				Base,
 			);
 			mainGroup = 445E5D7429E1F959001F00A8;
+			packageReferences = (
+				445E5D9429E1F96B001F00A8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				445E5D9729E1F976001F00A8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 445E5D7E29E1F959001F00A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B82FA929E5961A00AB67C1 /* GetRequestPage.swift in Sources */,
+				445E5D9E29E1FA19001F00A8 /* ApiManager.swift in Sources */,
 				445E5D8529E1F959001F00A8 /* ViewController.swift in Sources */,
 				445E5D8129E1F959001F00A8 /* AppDelegate.swift in Sources */,
 				445E5D8329E1F959001F00A8 /* SceneDelegate.swift in Sources */,
@@ -356,6 +400,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		445E5D9429E1F96B001F00A8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		445E5D9729E1F976001F00A8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		445E5D9529E1F96B001F00A8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 445E5D9429E1F96B001F00A8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		445E5D9829E1F976001F00A8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 445E5D9729E1F976001F00A8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 445E5D7529E1F959001F00A8 /* Project object */;
 }
